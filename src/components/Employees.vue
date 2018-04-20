@@ -1,90 +1,167 @@
 <template>
-   <div>
+   <div class="container">
       <form>
-         <div class="row justify-content-md-center">
-            <div class="form-group col col-md-4">
-               <label for="exampleInputEmail1">Email address</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+         <div class="form-group row">
+            <label for="idEmployeInputText" class="col-sm-2 col-form-label">ID Empleado:</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="idEmployeInputText">
             </div>
-            <div class="form-group col col-md-4">
-               <label for="exampleInputPassword1">Password</label>
-               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <div class="col-sm-2">
+               <button class="btn btn-primary">Buscar</button>
             </div>
-         </div>
-         <div class="row">
-            <div class="col col-md-8">
-               1 of 3
+            <label for="findEmployeeButton" class="col-sm-2 col-form-label">Clave Contable: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="findEmployeeButton">
             </div>
          </div>
-         
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      <form action="">
-         <label for="idEmployeeTextBox">ID Empleado:</label>
-         <input type="text" id="idEmployeeTextBox">
-         <label for="">Clave Contable: *</label>
-         <input type="text">
-         <label for="">Nombre: *</label>
-         <input type="text">
-         <label for="">Apellido Paterno: *</label>
-         <input type="text">
-         <label for="">Apellido Materno: *</label>
-         <input type="text">
-         <label for="">Calle: *</label>
-         <input type="text">
-         <label for="">Numero: *</label>
-         <input type="text">
-         <label for="">Colonia: *</label>
-         <input type="text">
-         <label for="">Ciudad: *</label>
-         <input type="text">
-         <label for="">Estado: *</label>
-         <input type="text">
-         <label for="">Codigo Postal: *</label>
-         <input type="text">
-         <label for="">Telefono: </label>
-         <input type="text">
-         <label for="">Email: *</label>
-         <input type="text">
-         <label for="">Tipo de Sangre: *</label>
-         <input type="text">
-         <label for="">RFC: *</label>
-         <input type="text">
-         <label for="">CURP: *</label>
-         <input type="text">
-         <label for="">IMSS: *</label>
-         <input type="text">
-         <label for="">Entrada Matutina: *</label>
-         <input type="text">
-         <label for="">Entrada Vespertina: *</label>
-         <input type="text">
-         <label for="">Empresa: *</label>
-         <input type="text">
-         <label for="">Área: *</label>
-         <input type="text">
-         <label for="">Departamento: *</label>
-         <input type="text">
-         <label for="">Sub Área: *</label>
-         <input type="text">
-         <label for="">Puesto: *</label>
-         <input type="text">
-         <label for="">Cedis: *</label>
-         <input type="text">
-         <label for="">Tipo Empleado: *</label>
-         <input type="text">
-         <label for="">Limite Credito:</label>
-         <input type="text">
-         <label for="">Usuario:</label>
-         <input type="text">
-         <label for="">Contraseña:</label>
-         <input type="text">
-         <label for="">Confirmar Contraseña:</label>
-         <input type="text"> 
+         <div class="form-group row">
+            <label for="nameInputText" class="col-sm-2 col-form-label">Nombre: *</label>
+            <div class="col-sm-10">
+               <input type="text" class="form-control" id="nameInputText">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="lastNameInputText" class="col-sm-2 col-form-label">Apellido Paterno: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="lastNameInputText">
+            </div>
+            <label for="surnameInputText" class="col-sm-2 col-form-label">Apellido Materno: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="surnameInputText">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="streetInputText" class="col-sm-2 col-form-label">Calle: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="streetInputText">
+            </div>
+            <label for="streetNumberInputText" class="col-sm-2 col-form-label">Numero: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="streetNumberInputText">
+            </div>
+            <label for="SuburbInputText" class="col-sm-2 col-form-label">Colonia: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="SuburbInputText">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="cityInputText" class="col-sm-2 col-form-label">Ciudad: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="cityInputText">
+            </div>
+            <label for="stateInputText" class="col-sm-2 col-form-label">Estado: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="stateInputText">
+            </div>
+            <label for="codeZipTextBox" class="col-sm-2 col-form-label">Codigo Postal: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="codeZipTextBox">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="telephoneNumberInputText" class="col-sm-2 col-form-label">Telefono: </label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="telephoneNumberInputText">
+            </div>
+            <label for="emailInputText" class="col-sm-2 col-form-label">Email: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="emailInputText">
+            </div>
+            <label for="typeBloodInputText" class="col-sm-2 col-form-label">Tipo de Sangre: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="typeBloodInputText">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">RFC: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">CURP: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">IMSS: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="entranceHourInputText" class="col-sm-2 col-form-label">Entrada Matutina: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="entranceHourInputText">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Entrada Vespertina: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Empresa: *</label>
+            <div class="col-sm-2">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Área: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Departamento: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Sub Área: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Puesto: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Cedis: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Tipo Empleado: *</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Limite Credito:</label>
+            <div class="col-sm-8">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Usuario:</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+            <label for="" class="col-sm-2 col-form-label">Contraseña:</label>
+            <div class="col-sm-4">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <label for="" class="col-sm-2 col-form-label">Confirmar Contraseña:</label>
+            <div class="col-sm-8">
+               <input type="text" class="form-control" id="">
+            </div>
+         </div>
+         <div class="form-group row">
+            <div class="col-sm-12">
+               <button class="btn btn-primary">Guardar</button>
+               <button class="btn btn-primary">Desactivar</button>
+               <button class="btn btn-primary">Limpiar</button>
+               <button class="btn btn-primary">Biometrica</button>
+               <button class="btn btn-primary">Foto</button>
+               <button class="btn btn-primary">Salir</button>
+            </div>
+         </div>        
       </form>
    </div>
 </template>
