@@ -1,7 +1,6 @@
 <template>
    <div id="app">
-      <Login/>
-      <Employees/>
+      <Tasks/>
    </div>
 </template>
 
@@ -9,13 +8,15 @@
    import HelloWorld from './components/HelloWorld'
    import Login from './components/Login'
    import Employees from './components/Employees'
+   import Tasks from './components/Tasks'
 
    export default {
       name: 'App',
       components: {
          HelloWorld,
          Login,
-         Employees
+         Employees,
+         Tasks
      }
    }
 </script>
