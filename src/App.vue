@@ -1,6 +1,6 @@
 <template>
    <div id="app">
-      <Tasks/>
+      <TodoHome/>
    </div>
 </template>
 
@@ -9,6 +9,7 @@
    import Login from './components/Login'
    import Employees from './components/Employees'
    import Tasks from './components/Tasks'
+   import TodoHome from './components/TodoHome'
 
    export default {
       name: 'App',
@@ -16,7 +17,8 @@
          HelloWorld,
          Login,
          Employees,
-         Tasks
+         Tasks, 
+         TodoHome
      }
    }
 </script>
